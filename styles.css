@@ -1,0 +1,112 @@
+body{
+    font-family: 'Overpass', sans-serif;
+    background-color: hsl(216, 12%, 8%);
+    margin: 0;
+}
+.main-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-div,.inner-div2{
+    margin:25%;
+    border-radius: 25px;
+    padding: 2.5%;
+    background-color: rgba(31,38,48,255);
+    
+}
+.star{
+    border-radius: 100%;
+    padding: 10px 15px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: rgba(38,47,56,255);
+}
+h1{
+    color: white;
+    font-weight: 700;
+}
+p{
+    color: hsl(217, 12%, 63%);
+    font-weight: 400;
+    font-family: 'Overpass', sans-serif;
+    line-height: 1.5;
+}
+
+.flex-div{
+    display: flex;
+    justify-content: space-between;
+}
+.flex-div button{
+    border-radius: 100%;
+    font-size: 1rem;
+    width: 45px;
+    height: 45px;
+    font-weight: 700;
+    padding: 10px 15px;
+    margin: 1% 0;
+    margin-bottom: 2%;
+    text-align: center;
+    border: none;
+    color: hsl(216, 12%, 54%);
+    background-color: rgba(38,47,56,255); 
+    cursor: pointer;
+}
+.submit{
+    width:100%;
+    border-radius: 30px;
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    margin:3% 0;
+    margin-bottom: 1.5%;
+    padding: 2% 4%;
+    border: none;
+    font-family: inherit;
+    font-size: 15px;
+    cursor: pointer;
+}
+.btn.selected{
+    background-color:hsl(217, 12%, 63%);
+}
+.flex-div button:hover{
+    background-color: hsl(25, 97%, 53%);
+}
+.submit:hover{
+    background-color: white;
+    color:hsl(25, 97%, 53%) ;
+}
+.grid{
+    display:grid;
+    row-gap: 30px;
+    align-content: center;
+    justify-content: center;
+}
+.inner-div2 :not(div:last-child){
+    text-align: center;
+}
+.output-div{
+  background-color: rgba(38,47,56,255);
+  border-radius: 50px;
+  width: auto;
+  margin: auto 18%;
+  
+}
+#Output{
+    color: hsl(25, 97%, 53%);
+    padding: 5px 10px;
+}
+
+.hide{
+    display: none;
+}
+.hidden{
+    display: none;
+}
+@media screen and (max-width:621px) {
+    .inner-div,.inner-div2{
+        margin:15%;
+        }
+}
+
